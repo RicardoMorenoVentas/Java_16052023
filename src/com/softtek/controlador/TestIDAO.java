@@ -10,7 +10,7 @@ public class TestIDAO {
         IDAO[] idaos = new IDAO[]{
                 new AccesoDesarrollo(),
                 new AccesoDesarrollo(),
-                new ClienteDAO()
+                new ClienteDAO(new AccesoDesarrollo())
         };
 
         for (IDAO idao: idaos){
