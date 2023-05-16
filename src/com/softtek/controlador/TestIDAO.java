@@ -5,7 +5,7 @@ import com.softtek.modelo.Ejercicio4.Cliente;
 import com.softtek.modelo.Ejercicio4.ClienteDAO;
 import com.softtek.modelo.Ejercicio4.IDAO;
 
-public class TestAseguradora {
+public class TestIDAO {
     public static void main(String[] args) {
         IDAO[] idaos = new IDAO[]{
                 new AccesoDesarrollo(),

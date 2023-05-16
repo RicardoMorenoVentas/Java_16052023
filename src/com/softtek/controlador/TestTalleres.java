@@ -9,15 +9,13 @@ public class TestTalleres {
 
         TallerPintura pintura = new TallerPintura();
 
-        SeguroCoche[] seguros = new SeguroCoche[]{
-            new SeguroCoche(new TallerMecanica(),"Pepito")
-        };
+        SeguroCoche seguros = new SeguroCoche(new TallerMecanica(),"Pepito");
 
-        for (SeguroCoche aseguradora : seguros){
-            System.out.println(aseguradora.reparar(coche));
-        }
+        System.out.println(seguros.reparar(coche));
 
-        System.out.println(pintura.reparar(coche));
+        seguros.setTaller_aseguradora(pintura);
+
+        System.out.println(seguros.reparar(coche));
 
     }
 }
